@@ -6,3 +6,11 @@
 //
 
 import Foundation
+enum FontsType: String {
+    case GilroySemibold = "Gilroy-Semibold"
+    case SFProSemibold = "SFProText-Semibold"
+    case SFProMediumPlaceholder = "SFProText-Medium"
+    case SFProRegular = "SFProText-Regular"
+    case SFProDisplayBoldNavTitle = "SF Pro Display Bold"
+    case SegoeUI = "Segoe UI"
+}

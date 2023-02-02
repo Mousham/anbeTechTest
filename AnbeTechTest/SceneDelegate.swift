@@ -17,6 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+        let nav = UINavigationController(rootViewController: vc)
+        changeRootViewController(with: nav)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -45,6 +48,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    func changeRootViewController(with desiredViewController: UIViewController) {
+        let snapshot: UIView = (self.window?.snapshotView(afterScreenUpdates: true))!
+        desiredViewController.view.addSubview(snapshot)
+        
+        self.window?.rootViewController = desiredViewController
+        UIView.animate(withDuration: 0.3, animations: {() in
+            snapshot.layer.opacity = 0
+            snapshot.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5)
+        }, completion: { (_: Bool) in
+            snapshot.removeFromSuperview()
+        })
     }
 
 

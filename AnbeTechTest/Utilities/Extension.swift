@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import AnimatedField
+//import AnimatedField
 
 extension UIButton{
     func pulsate(){
@@ -49,330 +49,10 @@ extension UIFont {
 
 
 
-extension String {
-    
-    static let MOBILE_NUMBER_CANNOT_BE_EMPTY: String = String("Mobile number cannot be empty")
-    static let INVALID_MOBILE_NUMBER: String = String("Invalid Mobile number")
-    static let INSERT_HOSPITAL_OPD_NUMBER: String = String("Hospital number cannot be empty")
-
-    static let USERNAME_CANNOT_BE_EMPTY: String = String("Username cannot be empty")
-    static let PASSWORD_CANNOT_BE_EMPTY: String = String("Password cannot be empty")
-    static let SOMETHING_WENT_WRONG_TRY_AGIAN_LATER: String = String("Something went wrong. Try again later")
-    static let DATE_FORMATE: String = String("yyyy/MM/dd")
-    static let NO_INTERNET_CONNECTION_MESSAGE: String = String("No Internet Connection.")
-    static let NO_INTERNET: String = String("No Internet!")
-    static let PLEASE_CHECK_YOUR_INTERNET_CONNECTION: String = String("Please check your internet\nconnection.")
-    
-    static let COMMENT_DELETE: String = String("Comment delete successfully.")
-    static let INSERT_VALID_MOBILE_NUMBER: String = String("Please insert a valid mobile number")
-    static let CURRENT_PASSWORD_EMPTY: String = String("Current Password cannot be empty")
-    static let NEW_PASSWORD_EMPTY: String = String("New Password cannot be empty")
-    static let CONFIRM_PASSWORD_EMPTY: String = String("Confirm Password cannot be empty")
-
-    static let CURRENT_PASSWORD_NOT_LESS: String = String("Current Password must be atlest 6 characters")
-    static let NEW_PASSWORD_NOT_LESS: String = String("New Password must be atlest 6 characters")
-    static let CONFIRM_PASSWORD_NOT_LESS: String = String("Confirm Password must be atlest 6 characters")
-    static let PASSWORD_NOT_LESS: String = String("Password must be atlest 6 characters")
-
-    static let I_Have_NOT_VISITED_THIS_HOSPITAL: String = String("I have not visited this hospital or I do not have Hospital No.")
-    static let I_HAVE_VISITED_THIS_HOSPITAL: String = String("I have visited this hospital before and have Hospital No.")
-
-    static let SOME_BODY_ALREADY_WITH: String = String("Somebody already with an OPD number from previous appointments.")
-    static let SOME_BODY_BOOKING_AN_APPOINTMENT: String = String("Somebody booking an appointment n this hospital for the first time.")
-
-    
-    static let YOU_CAN_FIND_HOSPITAL_NUM: String = String("Note: You can find Hospital No. an OPD Card/Book.")
-    static let NEW_PATIENT: String = String("New Patient")
-    static let OLD_PATIENT: String = String("Old Patient")
-    static let OLD_OR_NEW_PATIENT: String = String("Old or New Patient?")
-    
-    static let NEW_REGISTRATION_OR_FOLLOW_UP: String = String("New Registration or Follow Up?")
-    static let NEW_REGISTRATION: String = String("New Registration")
-    static let FOLLOW_UP: String = String("Follow Up")
-    static let THIS_NUMBER_IS_ALREADY_REGISTERED: String = String("This number is already registered with Mero Doctor.")
-
-    
-    
-    
-    static let NAYA_DARTA_WA_PURANO_DARTA: String = String("नयाँ दर्ता वा पुरानो दर्ता?")
-    static let NAYA_DARTA: String = String("नयाँ दर्ता")
-    static let PURANO_DARTA: String = String("पुरानो दर्ता?")
-
-    
-    
-    
-    static let NAMAST_SELF_APPOINTMENT: String = String("नमस्ते! तपाई ओपिडी टिकट आफै काट्ने ठाउँमा आइपुग्नुभएको छ ।")
-    static let WHICH_SERVICE_DO_YOU_WANT_TO_TAKE: String = String("तपाई कुन सेवा लिन खोज्नु भएको हो?")
-    static let ROUTINE_OPD: String = String("दैनिक नियमित ओपिडी")
-    static let PRIVATE_OPD: String = String("प्राइभेट ओपिडी")
-    static let CHECK_UP_TIME: String = String("जचाउँने समय")
-    static let REGISTRATION_FEE: String = String("दर्ता शुल्क")
-    static let DOCTOR_SELECTION_SERVICE: String = String("यस सेवामा आफुले चहाएको चिकित्सक छानेर उपचार गराउन पाइन्छ।")
-    static let DOCTOR_AVAILABLE: String = String("यस सेवामा आफुले चाहेको चिकित्स छानेर उपचार पाईन्छ।")
-    static let PACKAGE_OPD: String = String("पप्याकेज ओपिडी")
-    static let AVAILABLE_DOCTOR: String = String("उपलब्द चिकित्सकहरु")
-    static let NOTICE: String = String("उल्लेखित सबै चिकित्सकहरु हरेक दिन उपलब्ध नहुन पनि सक्नुहुनेछ। तर सबै बिरामिहरुले पाउनु पर्ने उचित सेवा, परिक्षण र सल्लाहमा यसले कुनै बाधा पुग्ने छैन।")
-    static let NEW_OR_OLD_PATIENT: String = String("नयाँ वा पुरानो बिरामि?")
-    static let TAPAI_NAYA_BIRAMI_KI_PURANO: String = String("तपाई यो सेन्टरको लागि नयाँ बिरामी हुनुहुन्छ कि पुरानो?")
-    static let NOTE_OPD_CARD_NUMBER: String = String("अस्पताल न. ओपिडि कार्ड / किताबमा हुन्छ।")
-    static let PURANO_BIRAMI: String = String("पुरानो बिरामि")
-    static let NAYA_BIRAMI: String = String("नयाँ बिरामि")
 
 
-    static let OLD_PATIENT_DETAIL: String = String("यो अस्पतालमा म पहिले पनि आएको छु र म सँग अस्पताल न. छ।")
-    static let NEW_PATIENT_DETAIL: String = String("यो अस्पतालमा म पहिले पनि आएको छैन वा म सँग अस्पताल न. छैन।")
-
-    static let PHILENAI_EAKPATAK_TICKET_KATEKO: String = String("पहिले नै एकपटक टिकट काटेर ओपिडि नम्बर लिइसकेको ब्यक्ति")
-    static let YES_HOSPITALMA_PAHILO_PATAK_TICKET_KATEKO: String = String("यस अस्पतालमा पहिलो पटक टिकट लिदै गरेको ब्यक्ति")
-
-    static let SABAI_PURANO_BIRAMI_HARULE_AANAI_PURANO_OPD: String = String("सबै पुरानो बिरामीहरुले आफ्नै पुरानो ओपिडी नम्बर प्रयोग गर्नाले यहाँहरुको मेडिकल रेकर्ड सधैंलाई सुरक्षित राख्न मदत हुन्छ।")
-    static let TAPAI_AFAI_BIRAMI_HUNUHUNCHA_WA_ARU: String = String("तपाई आफै बिरामी हुनुहुन्छ? वा अरु कोही?")
-
-    static let AFFAI: String = String("आफै")
-    static let ARU_BIRAMI_PURANO_BIRAMI_BIWARAN: String = String("अरु बिरामी(पुरानो बिरामीको बिवरण भर्नुहोस)")
-
-    static let BIRAMIKO_NAAM_CHHANUHOS: String = String("बिरामीको नाम छान्नुहोस्")
-    static let ASAPATAL_NUMBER: String = String("अस्पताल नम्बर")
-    static let KRIPAYA_AAFNO_OPD_NUMBER_HALNUHOS: String = String("कृपया आफ्नो ओपिडी नम्बर हाल्नुहोस्।")
-    static let BIRAMI: String = String("बिरामी")
-
-    
-    
-    static let PATHOLOGY: String = String("pathology")
-    static let ECG: String = String("ecg")
-    static let PRESCRIPTION: String = String("prescription")
-    static let OTHER: String = String("other")
-    static let SELECT_DATE: String = String("दिन छान्नुहोस्")
-    static let SAMAYA_CHHANUHOS: String = String("समय छान्नुहोस्")
-    
-    static let PLEASE_MAKE_SURE: String = String("Please make sure the OPD number you enter matches with the previously registered mobile number, else you may be barred from proceeding. We suggest you to contact the medical record section at the hospital to upgrade to your new number.\n\n(ओ.पि.डी नम्बर र मोबाइल नम्बर हाल्दा विशेष ध्यान पुर्‍याउनुहोला । मोबाइल नम्बर परिवर्तन भएमा अस्पातलमा सम्पर्क राखी सच्याउनुहोला । ओ.पि.डी नम्बर र सुरुमा टिकट लिँदा टिपाएको नम्बर परस्पर नमिलेमा टिकट काट्ने प्रक्रिया अघि बढ्ने छैन।)")
-    
-    static let APPOINTMENT_LINUHOS: String = String("एपोइन्टमेन्ट् लिनुहोस्।")
-    static let Bhuktani: String = String("भुक्तानी")
-    static let PLEASE_SELECT_ANY_ONE_TO_PAY: String = String("Please select any one to pay.\n(भुक्तानी गर्न कुनै एक छान्नुहोस्।)")
-
-    static let BIBHAGA_CHHANNUHOS: String = String("विभाग छान्नुहोस्।")
-    static let CHIKTSAK_CHANNUHOS: String = String("चिकित्सक् छान्नुहोस्")
-    
-    static let BIRAMIKO_BIWARAN_BHARNUHOS: String = String("ADD PATIENT DETAIL\nबिरामीको बिवरण भर्नुहोस")
-    static let NAYA_BIRAMI_THAPNUHOS: String = String("नयाँ बिरामी थप्नुहोस्")
-    static let NAYA_PASSWORD_BANAUNUHOS: String = "नयाँ पासर्वोड बनाउनुहोस्।"
-
-    
-    static let Liegga: String = String("लिङ्ग")
-    static let PURUS: String = String("पुरुष")
-    static let MAHILA: String = String("महिला")
-    static let PLEASE_ENTER_MOBILE_NUMBER: String = String("Please enter mobile number\n")
-    static let AFUNO_MOBILE_NUMBER_HALNUHOS: String = String("(आफ्नो मोबाईल नम्बर हाल्नुहोस्)")
-    static let TOKEN_NO: String = String("टोकन नं.")
-    static let HOSPITAL_VISIT_TIME: String = String("अस्पतालमा जाने समय")
-    static let DOCTOR_VETNE_SAMAYA: String = String("चिकित्सक भेट्ने समय")
-    static let DUR_UPACHAR: String = String("दूर - उपचार")
-    
-    var isBlank: Bool {
-        get {
-            let trimmed = trimmingCharacters(in: CharacterSet.whitespaces)
-            return trimmed.isEmpty
-        }
-    }
-    
-    func getHeight(with width: CGFloat, font: UIFont) -> CGFloat {
-        let maxSize = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
-        let actualSize = self.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: font], context: nil)
-        return actualSize.height
-    }
-    
-    
-    func getWidth(with height: CGFloat, font: UIFont) -> CGFloat {
-        let maxSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: height)
-        let actualSize = self.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], attributes: [NSAttributedString.Key.font: font], context: nil)
-        return actualSize.width
-    }
-    
-    var base64Decoded: String? {
-            guard let base64 = Data(base64Encoded: self) else { return nil }
-            let utf8 = String(data: base64, encoding: .utf8)
-            return utf8
-        }
-
-        /// Returns a base64 representation of the current string, or nil if the
-        /// operation fails.
-        var base64Encoded: String? {
-            let utf8 = self.data(using: .utf8)
-            let base64 = utf8?.base64EncodedString()
-            return base64
-        }
-}
-
-extension UIViewController {
-    
-    func toastMessage(message: String?, toastType: ToastType){
-        guard let window = UIApplication.shared.keyWindow else {return}
-        let messageLbl = UILabel()
-        messageLbl.numberOfLines = 0 
-        messageLbl.text = message
-        messageLbl.textAlignment = .center
-        messageLbl.font = toastType.font
-        messageLbl.textColor = toastType.textColor
-        messageLbl.backgroundColor = toastType.backgroundColor?.withAlphaComponent(1.0)
-
-        let textSize:CGSize = messageLbl.intrinsicContentSize
-        let labelWidth = min(textSize.width, window.frame.width - 40)
-
-        messageLbl.frame = CGRect(x: 20, y: window.frame.height - 120, width: labelWidth + 30, height: textSize.height + 20)
-        messageLbl.center.x = window.center.x
-        messageLbl.layer.cornerRadius = messageLbl.frame.height/2
-        messageLbl.layer.masksToBounds = true
-        window.addSubview(messageLbl)
-
-        messageLbl.alpha = 0
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            
-            UIView.animate(withDuration: 2.0, delay: 0.2, options: .curveEaseOut, animations: {
-                messageLbl.alpha = 1.0
-            }, completion: { _ in
-                messageLbl.removeFromSuperview()
-            })
-        }
-        
-    }
-    
-    func popupAlert(title: String, message: String, actionTitles: [String], perferredType:UIAlertController.Style, actionStyle:[UIAlertAction.Style], action:[((UIAlertAction) -> Void)]){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: perferredType)
-        for (index, title) in actionTitles.enumerated() {
-            let action = UIAlertAction(title: title, style: actionStyle[index], handler: action[index])
-            alert.addAction(action)
-        }
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func showHud(withTitle title: String, and Description:String) {
-//       let Indicator = MBProgressHUD.showAdded(to: self.view, animated: true)
-//       Indicator.label.text = title
-//       Indicator.isUserInteractionEnabled = false
-//       Indicator.detailsLabel.text = Description
-//       Indicator.show(animated: true)
-         ProgressHud.showProgressHUD()
-    }
-    func hideHud() {
-      // MBProgressHUD.hide(for: self.view, animated: true)
-        ProgressHud.hideProgressHUD()
-    }
-    
-    
-    @objc func releaseStatus(tokenid: String, type: String){
-        ApiManager.sendRequest(toApi: Api.Endpoint.releaseStatus(tokenid: tokenid, type: type)) { [weak self](status, data)
-            in
-            guard let strongSelf = self else { return }
-            NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(strongSelf.releaseStatus), object: nil)
-
-        } onError: { (error) in
-            self.toastMessage(message: error.localizedDescription, toastType: .message)
-        }
-
-    }
-    
-    
-    func removeUpcomingArray(){
-        upcomingArray.relationname = ""
-        upcomingArray.midasid = ""
-        upcomingArray.mobileno = ""
-        upcomingArray.fullname = ""
-        upcomingArray.gender = ""
-        upcomingArray.dobbs = ""
-        upcomingArray.email = ""
-        upcomingArray.dob = ""
-
-        upcomingArray.skipforgeneral = ""
-        upcomingArray.doct_docname = ""
-        upcomingArray.appo_callstatus = ""
-        upcomingArray.orgcode = ""
-        upcomingArray.appointmenttype = ""
-        upcomingArray.isurgent = ""
-        upcomingArray.doct_docid = ""
-        upcomingArray.regtime = ""
-        upcomingArray.orna_address = ""
-        upcomingArray.timeskipforehs = ""
-        upcomingArray.doctime = ""
-        upcomingArray.aptime = ""
-        upcomingArray.depid = ""
-        upcomingArray.isgovernment = ""
-        upcomingArray.prate = ""
-        upcomingArray.type = ""
-        upcomingArray.bannerimage = ""
-        upcomingArray.appo_queueno = ""
-        upcomingArray.premiumqty = ""
-        upcomingArray.timeskipforgeneral = ""
-        upcomingArray.orna_orgname = ""
-        upcomingArray.tokentype = ""
-        upcomingArray.depimage = ""
-        upcomingArray.appo_appid = ""
-        upcomingArray.appo_midasid = ""
-        upcomingArray.appo_appdate = ""
-        upcomingArray.day = ""
-        upcomingArray.ispremium = ""
-        upcomingArray.generalfee = ""
-        upcomingArray.ehsfee = ""
-        upcomingArray.ehsfee_followup = ""
-        upcomingArray.depname = ""
-        upcomingArray.appo_apptime = ""
-        upcomingArray.isdummy = ""
-        upcomingArray.gdepid = ""
-        upcomingArray.norgname = ""
-        upcomingArray.apptime = ""
-        upcomingArray.docmeettime = ""
-        upcomingArray.ndepname = ""
-        upcomingArray.premiumtype = ""
-        upcomingArray.doct_desig = ""
-        upcomingArray.datebs = ""
-        upcomingArray.image = ""
-        upcomingArray.tokenid = ""
-        upcomingArray.appo_patientid = ""
-        upcomingArray.orna_orgid = ""
-        upcomingArray.currenttime = ""
-    }
-    
-    
-    
-
-}
 
 
-enum ToastType{
-    
-    case success
-    case failure
-    case message
-    
-    var backgroundColor: UIColor? {
-        switch self {
-        case .success:
-            return UIColor.from(hex: "#70D4B4")
-        case .failure:
-            return UIColor.from(hex: "#DD3E3E")
-        case .message:
-            return UIColor.from(hex: "#EBEBEB")
-        }
-    }
-    
-    var textColor: UIColor? {
-        switch self {
-        case .failure,.success:
-            return Theme.Color.white
-        case .message:
-            return Theme.Color.darkGray
-        }
-    }
-    
-    var font: UIFont? {
-        return UIFont.medium(ofSize: 13) //systemFont(ofSize: 17)
-    }
-    
-    var blurEffect: UIBlurEffect? {
-        return nil
-    }
-}
 extension UIView {
    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
@@ -600,27 +280,7 @@ extension UIView {
     }
     
     // Embedded Message Label
-    
-    func showMessageLabel(embeddedLabel:UILabel, message:String, textColor:UIColor = Theme.Color.black) {
-        
-        //self.backgroundColor = UIColor.white
-        
-        embeddedLabel.text = message
-        embeddedLabel.numberOfLines = 0
-        embeddedLabel.translatesAutoresizingMaskIntoConstraints = false
-        embeddedLabel.textAlignment = .center
-        embeddedLabel.font = UIFont.systemFont(ofSize: 16)
-        embeddedLabel.textColor = textColor
-        
-        self.addSubview(embeddedLabel)
-        
-        NSLayoutConstraint(item: embeddedLabel, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: embeddedLabel, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 16).isActive = true
-        NSLayoutConstraint(item: embeddedLabel, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: -16).isActive = true
-        NSLayoutConstraint(item: embeddedLabel, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
-        
-        self.bringSubviewToFront(embeddedLabel)
-    }
+  
     
     func hideMessageLabel(embeddedLabel:UILabel?) {
         embeddedLabel?.removeFromSuperview()
@@ -937,13 +597,7 @@ extension UIImageView {
         addSubview(blurEffectView)
     }
 }
-extension UILabel {
-    func setHeaderTitle(title: String,color: UIColor) {
-        self.text = title
-        self.font = UIFont(name: FontsType.SFProDisplayBoldNavTitle.rawValue, size: 17)
-        self.textColor = color
-    }
-}
+
 extension UIView {
   func addTopBorderWithColor(color: UIColor, width: CGFloat) {
     let border = CALayer()
@@ -1092,7 +746,7 @@ extension UITableView {
         image.image = UIImage(named: "iconMeroDoctorError")
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
         messageLabel.text = message
-        messageLabel.textColor = Theme.Color.Dark_Red_Color
+        messageLabel.textColor = UIColor.red
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
         messageLabel.font = UIFont(name: "TrebuchetMS", size: 15)
@@ -1176,18 +830,7 @@ extension Sequence where Element: Hashable {
         return filter { set.insert($0).inserted }
     }
 }
-extension AnimatedField {
-    func validatedText(validationType: ValidatorType) throws -> String {
-        let validator = ValidatorFactory.validatorFor(type: validationType)
-        return try validator.validated(self.text!)
-    }
-}
-extension UITextField {
-    func validatedText(validationType: ValidatorType) throws -> String {
-        let validator = ValidatorFactory.validatorFor(type: validationType)
-        return try validator.validated(self.text!)
-    }
-}
+
 extension UISearchBar {
 
 func change(textFont : UIFont?) {

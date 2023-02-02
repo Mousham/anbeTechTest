@@ -9,21 +9,41 @@ import UIKit
 
 class DetailsVC: UIViewController {
 
+    @IBOutlet weak var headerTitle: UILabel!
+    @IBOutlet weak var itemDesc: UILabel!
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var footerView: UIView!
+    var itemDetails = CartItemModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        uisetup()
+        loaData()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        footerView.addRoundedCorner(corner: [.topLeft,.topRight], radius: 12)
+        
+    }
+    func uisetup() {
+       // footerView.addRoundedCorner(corner: [.topLeft,.topRight], radius: 12)
+    }
+    func loaData() {
+        itemImage.image = UIImage(named: itemDetails.image ?? "")
+        itemName.text = itemDetails.name
+        itemDesc.text = itemDetails.desc
+        headerTitle.text = itemDetails.name
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backTap(_ sender: Any) {
+        self.dismiss(animated: true)
     }
-    */
+    
 
 }
